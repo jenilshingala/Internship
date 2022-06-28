@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contant
+    </title>
+</head>
+<body>
+    <form method="post" action="/contact">
+        <!-- Name: <input type="text" name="txt1" required>
+        Mobile : <input type=" number" name="txt2" required>
+        Enrollment:<input type="number" name"txt3" required>
+        Address:<input type="text" name="txt4" required>
+        <input type="submit"/> -->
+        
+
+        <table style="width: 30%; " border="1" align="center">
+            <tr>
+                <td><label for="name"> Name</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>  
+                <td><label for="pass">Enter Password</label></td>   
+                <td><input type="password" id="pass" name="pass" required ></td> 
+            </tr>  
+            <tr> 
+                <td><label for="email">e-mail</label></td>
+                <td><input type="text" id="email" name="email" required ></td>
+            </tr>     
+            <tr> 
+                <td><label for="numb">Mobile Number</label></td>
+                <td><input type="text" id="numb" name ="number" required></td>
+            </tr>  
+            <tr> 
+                <td><label for="gender">Gender</label></td>
+                <td><input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label></td>
+            </tr>  
+            <tr> 
+                <td><label for="dt">Date of Birth</label></td>
+                <td><input type="date" id="dt" name="birthday"  value="date"required></td>
+            </tr>  
+            <tr> 
+                <td><label for="lang">Languages Known</label></td>
+                <td><input type="checkbox" id="eng" name="language" value="english"><label for="eng">English</label>
+                    <input type="checkbox" id="tel" name="language" value="telugu"><label for="tel">Telugu</label>
+                    <input type="checkbox" id="hin" name="language" value="hindi"><label for="hin">Hindi</label>
+                    <input type="checkbox" id="tam" name="language" value="tamil"><label for="tam">Tamil</label></td>
+            </tr>  
+            <tr>
+                <td><label for="area">address</label></td>
+                <td>
+                <textarea id = "address" name="address" rows="5" cols="20" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="city"></label>City</td>
+                <td><select name="city" id="city">
+                    <option value="rajkot">rajkot</option>
+                    <option value="Anand">Anand</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Vadodara">Vadodara</option>
+                    <option value="Ahemedabad">Ahemedabad</option> 
+                </select></td>
+            </tr> 
+            <tr>
+                <td><label for="state"></label>state</td>
+                <td><select name="state" id="state">
+                    <option value="gujarat">gujarat</option>
+                    <option value="maharastra">maharastra</option>
+                    <option value="rajasthan">rajasthan</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="country"></label>country</td>
+                <td><select name="country" id="country">
+                    <option value="india">india</option>
+                    <option value="bangladesh">bangladesh</option>
+                    <option value="nepal">nepal</option>
+                    <option value="shreelanka">shreelanka</option>
+                </select></td>
+            </tr>
+        </table>
+        <table style="width: 30%;" border=1 align="center">
+            <tr>
+                <td><input type="submit"></td>
+                <td><button type="button" class="cancelbtn"<li><a href="index.ejs" target="right"><b>reset</b></a></li></button></td>
+                <td><button type="button" class="cancelbtn"<li><a href="index.ejs" target="main"><b>cancel</b></a></li></button></td>
+            </tr>   
+        </table>
+    </form>
+</body>
+</html>
